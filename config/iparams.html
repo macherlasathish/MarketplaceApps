@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+  <link rel="stylesheet" href="./assets/iparams.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <fw-input type="password" id="key" label="Enter encryption key"></fw-input>
+  <fw-input type="password" id="hidden-key" style="display: none;"></fw-input>
+  <br>
+  <fw-input type="email" id="email" label="Enter email to receive user added and encryption/decryption notifications"></fw-input>
+  <br>
+  <fw-radio description="Enable permission to encrypt" checked id="encryption"></fw-radio>
+  <br>
+  <script src="./assets/iparams.js"></script>
+  <script type="module" src="https://unpkg.com/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+{
+  "platform-version": "2.3",
+  "product": {
+    "freshdesk": {
+      "events":{
+        "onAppInstall":{
+          "handler":"onAppInstallCallback"
+        },
+        "onExternalEvent":{
+          "handler":"onExternalEventCallback"
+        }
+      },
+      "requests":{
+        "sendEmail":{}
+      },
+      "location": {
+        "ticket_sidebar": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      },
+      "functions":{
+        "generateQR":{
+          "timeout":15
+        },
+        "verifyUser":{
+          "timeout":15
+        },
+        "encryptDataKey":{
+          "timeout":15
+        }
+      }
+    }
+  },
+  "engines": {
+    "node": "18.16.0",
+    "fdk": "9.0.0"
+  },
+  "dependencies":{
+    "speakeasy":"2.0.0",
+    "qrcode":"1.5.3",
+    "crypto-js":"4.1.1"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <style>
+
+  </style>
+  <head>
+    <title>A Template App</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="https://cdn.freshdev.io/assets/app-client@2.js" allow="clipboard"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    
+  </head>
+
+  <body style="display: flex;">
+    <div class="main">
+      <div>
+        <fw-input label="Enter your email address" id="freshworks-email" type="text"></fw-input>
+      </div>
+      <div>
+        <fw-input label="Enter the password" id="password" type="password"></fw-input>
+      </div>
+      <div>
+        <fw-input label="Enter OTP" id="otp" type="password"></fw-input>
+      </div>
+      
+      <div>
+        <fw-input label="Output" disabled id="output" type="text"></fw-input>
+      </div>
+      <br>
+      <div>
+        <fw-button id="encrypt-pw">Encrypt</fw-button>
+        <fw-button id="decrypt-pw">Decrypt</fw-button>
+      </div>
+      <br>
+      <div>
+        <fw-button id="verify-user" size="small" color="secondary">Verify User</fw-button>
+      </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/speakeasy@2.0.0/index.min.js"></script>
+  <script defer src="app.js"></script>
+  <script async type="module" src="https://unpkg.com/@freshworks/crayons@3/dist/crayons/crayons.esm.js"></script>
+  <script async nomodule src="https://unpkg.com/@freshworks/crayons@3/dist/crayons/crayons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</html>

@@ -1,0 +1,14 @@
+{
+    "sendEmail":{
+        "schema":{
+            "method":"POST",
+            "host":"mailservice.freshdesk.com",
+            "path":"/api/v1/email/send",
+            "headers":{
+                "Authorization":"FWEM-756D30-1011-6BECAE1EE1667F79610EFE54D39C42453E0E",
+                "Content-Type":"application/json",
+                "X-ACCOUNT-ID":"2"
+            }
+        }
+    }
+}
